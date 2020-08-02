@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animation-player.css">
+	<script type="text/javascript" src="js/start_game.js"></script>
+	<script type="text/javascript" src="js/restart_game.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+</head>
+<body>
+	<div class="display">
+		<div class="start-game">
+			<div class="start-top"></div>
+			<div class="start-center"></div>
+			<div class="start-bottom"></div>
+			<div class="start-text">
+				<img class="start-logo" src="img/logo.png" alt="Duel">
+			    <button class="start-text-button" onclick="startGame()">Start Game</button>
+			</div>
+		</div>
+		<div class="score-wrapper">
+			<div class="in-menu score-player-one">
+				<p class="score-player">Terrorist</p>
+				<p class="score-player score-player-number score-player-number-one">0</p>
+			</div>
+			<img class="logo-game in-menu" src="img/logo.png" alt="Duel">
+			<div class="in-menu score-player-two">
+				<p class="score-player">Police</p>
+				<p class="score-player score-player-number score-player-number-two">0</p>
+			</div>
+		</div>
+		<div class="display-player">
+			<div class="display-player-arena-one display-player-arena">
+				<div class="player-one" style="display: none;"></div>
+				<div class="player-one-attack" style="display: none;"></div>
+				<div class="player-one-hurt" style="display: none;"></div>
+				<div class="player-one-one" style="display: none;"></div>
+				<div class="player-one-attack-one" style="display: none;"></div>
+				<div class="player-one-two" style="display: none;"></div>
+				<div class="player-one-attack-two" style="display: none;"></div>
+			</div>
+			<div class="display-player-arena-two display-player-arena">
+				<div class="player-two" style="display: none;"></div>
+				<div class="player-two-attack" style="display: none;"></div>
+				<div class="player-two-hurt" style="display: none;"></div>
+				<div class="player-two-one" style="display: none;"></div>
+				<div class="player-two-attack-one" style="display: none;"></div>
+				<div class="player-two-two" style="display: none;"></div>
+				<div class="player-two-attack-two" style="display: none;"></div>
+			</div>
+			<div>
+				<audio class="play-sound-one-attack">
+					<source src="sound/attack-1.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="play-sound-one-attack-two">
+					<source src="sound/attack-1-2.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="play-sound-two-attack">
+					<source src="sound/attack-2.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="play-sound-two-attack-two">
+					<source src="sound/attack-2-2.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="play-sound-hurt">
+					<source src="sound/hurt.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="sound-wait">
+					<source src="sound/wait.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="sound-run">
+					<source src="sound/run.mp3" type="audio/mpeg"></source>
+		        </audio>
+		        <audio class="sound-final">
+					<source src="sound/final.mp3" type="audio/mpeg"></source>
+		        </audio>
+			</div>
+		</div>
+		<div class="time-wrapper">
+			<div class="time time-name">ATTENTION</div>
+			<p class="time"><span class="time-sec">2 </span> sec</p>
+		</div>
+		<div class="final-game" style="display: none;">
+			<div class="final-top"></div>
+			<div class="final-center"></div>
+			<div class="final-bottom"></div>
+			<div class="final-text">
+				<p class="final-text-name">GAME OVER</p>
+			    <p class="final-text-score">Terrorist &nbsp<span class="score-player-number-one">0</span> : <span class="score-player-number-two">0</span> &nbspPolice&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+			    <button class="final-text-button" onclick="restartGame()">Restart Game</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
