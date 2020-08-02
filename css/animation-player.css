@@ -1,0 +1,221 @@
+.player-one {
+	height: 276px;
+	width: 145.125px;
+	background: url("../img/walk-1-0.png") no-repeat;
+	margin-top: 98px;
+	margin-left: 213px;
+	animation: run_one 2s steps(8) 2s forwards;
+	position: relative;
+
+}
+
+@keyframes run_one {
+	from {background-position: 0px;}
+	to {background-position: -1161px;}
+	0% {right: 0; width: 145.125px;}
+    99% {width: 145.125px;}
+    100% {right: 213px; width: 149.125px;}
+}
+
+.player-two {
+	height: 276px;
+	width: 152.875px;
+	background: url("../img/walk-2-0.png") no-repeat;
+	margin-top: 98px;
+	animation: run_two 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes run_two {
+	from {background-position: 0px;}
+	to {background-position: -1223px;}
+	0% {left: 0; width: 152.875px;}
+    99% {width: 152.875px;}
+    100% {left: 196px; width: 162.875px;}
+}
+
+.player-one-attack {
+	height: 276px;
+	width: 185.333px;
+	background: url("../img/attack-1-0.png") no-repeat;
+	margin-top: 98px;
+	animation: attack_one 2s steps(5) 0s forwards;
+	position: absolute;
+}
+
+@keyframes attack_one {
+	from {background-position: 0px;}
+	to {background-position: -926.666px;}
+}
+
+.player-two-attack {
+	height: 276px;
+	width: 210.833px;
+	background: url("../img/attack-2-0.png") no-repeat;
+	margin-top: 98px;
+	left: 148px;
+	animation: attack_two 2s steps(5) 0s forwards;
+	position: relative;
+}
+
+@keyframes attack_two {
+	from {background-position: 0px;}
+	to {background-position: -1054.166px;}
+}
+
+.player-one-hurt {
+	height: 276px;
+	width: 252.111px;
+	background: url("../img/hurt-1-0.png") no-repeat;
+	margin-top: 98px;
+	animation: hurt_one 2s steps(8) 2s forwards;
+	position: absolute;
+}
+
+@keyframes hurt_one {
+	from {background-position: 0px;}
+	to {background-position: -2010.888px;}
+}
+
+.player-two-hurt {
+	height: 276px;
+	width: 252.333px;
+	background: url("../img/hurt-2-0.png") no-repeat;
+	margin-top: 98px;
+	left: 106px;
+	animation: hurt_two 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes hurt_two {
+	from {background-position: 0px;}
+	to {background-position: -2018.666px;}
+}
+
+.player-one-one {
+	height: 276px;
+	width: 145.125px;
+	background: url("../img/walk-1-1.png") no-repeat;
+	margin-top: 98px;
+	margin-left: 213px;
+	animation: run_one_one 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes run_one_one {
+	from {background-position: 0px;}
+	to {background-position: -1161px;}
+	0% {right: 0; width: 145.125px;}
+    99% {width: 145.125px;}
+    100% {right: 213px; width: 274px;}
+}
+
+.player-two-one {
+	height: 276px;
+	width: 152.875px;
+	background: url("../img/walk-2-1.png") no-repeat;
+	margin-top: 98px;
+	animation: run_two_one 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes run_two_one {
+	from {background-position: 0px;}
+	to {background-position: -1223px;}
+	0% {left: 0; width: 152.875px;}
+    99% {width: 152.875px;}
+    100% {left: 97px; width: 261px;}
+}
+
+.player-one-attack-one {
+	height: 276px;
+	width: 274.5px;
+	background: url("../img/attack-1-1.png") no-repeat;
+	margin-top: 98px;
+	animation: attack_one_one 2s steps(5) 0s forwards;
+	position: absolute;
+}
+
+@keyframes attack_one_one {
+	from {background-position: 0px;}
+	to {background-position: -1372.5px;}
+}
+
+.player-two-attack-one {
+	height: 276px;
+	width: 261.333px;
+	background: url("../img/attack-2-1.png") no-repeat;
+	margin-top: 98px;
+	left: 97px;
+	animation: attack_two_one 2s steps(5) 0s forwards;
+	position: relative;
+}
+
+@keyframes attack_two_one {
+	from {background-position: 0px;}
+	to {background-position: -1306.666px;}
+}
+
+.player-one-two {
+	height: 276px;
+	width: 145.125px;
+	background: url("../img/walk-1-2.png") no-repeat;
+	margin-top: 98px;
+	margin-left: 213px;
+	animation: run_one_two 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes run_one_two {
+	from {background-position: 0px;}
+	to {background-position: -1161px;}
+	0% {right: 0; width: 145.125px;}
+    99% {width: 145.125px;}
+    100% {right: 213px; width: 126px;}
+}
+
+.player-two-two {
+	height: 276px;
+	width: 152.875px;
+	background: url("../img/walk-2-2.png") no-repeat;
+	margin-top: 98px;
+	animation: run_two_two 2s steps(8) 2s forwards;
+	position: relative;
+}
+
+@keyframes run_two_two {
+	from {background-position: 0px;}
+	to {background-position: -1223px;}
+	0% {left: 0; width: 152.875px;}
+    99% {width: 152.875px;}
+    100% {left: 150px; width: 208px;}
+}
+
+.player-one-attack-two {
+	height: 276px;
+	width: 126.5px;
+	background: url("../img/attack-1-2.png") no-repeat;
+	margin-top: 98px;
+	animation: attack_one_two 2s steps(5) 0s forwards;
+	position: absolute;
+}
+
+@keyframes attack_one_two {
+	from {background-position: 0px;}
+	to {background-position: -632.5px;}
+}
+
+.player-two-attack-two {
+	height: 276px;
+	width: 207.7px;
+	background: url("../img/attack-2-2.png") no-repeat;
+	margin-top: 98px;
+	left: 151px;
+	animation: attack_two_two 2s steps(9) 0s forwards;
+	position: relative;
+}
+
+@keyframes attack_two_two {
+	from {background-position: 0px;}
+	to {background-position: -1869.3px;}
+}
